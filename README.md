@@ -7,6 +7,7 @@
 This repository documents the complete execution of Task 1 from Week 1.
 The goal was to build a clean, isolated, reproducible Machine Learning environment
 and publish it to GitHub.
+
 ---
 
 \# 🧾 Full Execution Log – Task 1
@@ -16,6 +17,7 @@ and publish it to GitHub.
 \- Installed Anaconda without adding it to system PATH.
 \- Avoided making Anaconda the default Python interpreter.
 \- Reason: Prevent system conflicts and dependency issues.
+
 ---
 
 \## 2️⃣ Encountered libmamba Solver Error
@@ -25,12 +27,14 @@ Error:conda-libmamba-solver (module 'libmambapy' has no attribute 'QueryFormat')
 solution:
 Upgraded conda and forced classic solver:conda install -n base -c conda-forge conda=25.7.0 --solver classic
 Result: Conda stabilized.
+
 ---
 
 \## 3️⃣ Created Isolated Environment
 
 Command: conda create -n ml\_week1 python=3.12 -y
 \- Keep project isolated from base environment
+
 ---
 
 \## 4️⃣ Activated Environment
@@ -40,12 +44,14 @@ Command: conda activate ml\_week1
 \- Switched Python interpreter
 \- Switched pip
 \- Isolated package installation
+
 ---
 
 \## 5️⃣ Installed Required ML Packages
 
 \- numpy \- pandas \- scikit-learn \- jupyterlab
 Note: Used pip due to solver issues.
+
 ---
 
 \## 6️⃣ Launched JupyterLab
